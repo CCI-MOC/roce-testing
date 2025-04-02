@@ -4,10 +4,14 @@ Commands
 
 
 ```bash
-ib_send_bw:		ib_send_bw 	-d 	$NCCL_IB_HCA -a  -t 2048 -r 2048 -l 128 --recv_post_list=128 -b -m 4096 -n 64000				
-ib_write_bw:	ib_write_bw -d 	$NCCL_IB_HCA -a  				 -l 128 --recv_post_list=128 -b -m 4096 -n 64000				
-ib_read_bw:		ib_read_bw 	-d 	$NCCL_IB_HCA -a  				 -l 128 --recv_post_list=128 -b -m 4096 -n 64000								
+ib_send_bw:	ib_send_bw	-d 	$NCCL_IB_HCA	-a	-t 2048	-r 2048 -l 128 --recv_post_list=128 -b -m 4096 -n 64000				
+ib_write_bw	ib_write_bw	-d 	$NCCL_IB_HCA	-a	-l 128 --recv_post_list=128 -b -m 4096 -n 64000				
+ib_read_bw:	ib_read_bw	-d 	$NCCL_IB_HCA	-a	-l 128 --recv_post_list=128 -b -m 4096 -n 64000								
 ```
+
+
+![Local Image](./perftest_results.png)
+
 
 
 | Data Size (B) | ib_send_bw (MB/s) | ib_write_bw (MB/s) | ib_read_bw (MB/s) | ib_send_bw (Gbps) | ib_write_bw (Gbps) | ib_read_bw (Gbps) | Peak (Gbps)|
@@ -42,5 +46,3 @@ ib_read_bw:		ib_read_bw 	-d 	$NCCL_IB_HCA -a  				 -l 128 --recv_post_list=128 -
 | 26917.76         | 26902.00          | 10256.88         | 210              | 210               | 80               | 400  |
 
 
-
-![Local Image](./perftest_results.png)

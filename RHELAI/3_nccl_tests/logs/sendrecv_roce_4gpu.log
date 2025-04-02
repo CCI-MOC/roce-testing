@@ -1,0 +1,140 @@
+# nThread 1 nGpus 4 minBytes 1073741824 maxBytes 27950841856 step: 2147483648(bytes) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 574629 on MOC-R4PCC04U37 device  0 [0000:06:00] NVIDIA H100 80GB HBM3
+#  Rank  1 Group  0 Pid 574629 on MOC-R4PCC04U37 device  1 [0000:26:00] NVIDIA H100 80GB HBM3
+#  Rank  2 Group  0 Pid 574629 on MOC-R4PCC04U37 device  2 [0000:a6:00] NVIDIA H100 80GB HBM3
+#  Rank  3 Group  0 Pid 574629 on MOC-R4PCC04U37 device  3 [0000:c6:00] NVIDIA H100 80GB HBM3
+#  Rank  4 Group  0 Pid 753027 on MOC-R4PCC04U35 device  0 [0000:06:00] NVIDIA H100 80GB HBM3
+#  Rank  5 Group  0 Pid 753027 on MOC-R4PCC04U35 device  1 [0000:26:00] NVIDIA H100 80GB HBM3
+#  Rank  6 Group  0 Pid 753027 on MOC-R4PCC04U35 device  2 [0000:a6:00] NVIDIA H100 80GB HBM3
+#  Rank  7 Group  0 Pid 753027 on MOC-R4PCC04U35 device  3 [0000:c6:00] NVIDIA H100 80GB HBM3
+MOC-R4PCC04U37:574629:574629 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno7np0
+MOC-R4PCC04U37:574629:574629 [0] NCCL INFO Bootstrap: Using eno7np0:169.254.103.56<0>
+MOC-R4PCC04U37:574629:574629 [0] NCCL INFO cudaDriverVersion 12040
+MOC-R4PCC04U37:574629:574629 [0] NCCL INFO NCCL version 2.26.2+cuda.
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno7np0
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NCCL_IB_HCA set to mlx5_5
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NET/IB : Using [0]mlx5_5:1/RoCE [RO]; OOB eno7np0:169.254.103.56<0>
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Using network IB
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO Using network IB
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO Using network IB
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO Using network IB
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO DMA-BUF is available on GPU device 0
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO DMA-BUF is available on GPU device 2
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO DMA-BUF is available on GPU device 1
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO DMA-BUF is available on GPU device 3
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO ncclCommInitRank comm 0x61f87a0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId a6000 commId 0x4a8fb6ecbba1a10a - Init START
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO ncclCommInitRank comm 0x6176080 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 26000 commId 0x4a8fb6ecbba1a10a - Init START
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO ncclCommInitRank comm 0x627aec0 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c6000 commId 0x4a8fb6ecbba1a10a - Init START
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO RAS client listening socket at ::1<28028>
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO ncclCommInitRank comm 0x60f3a40 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4a8fb6ecbba1a10a - Init START
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO Bootstrap timings total 0.103820 (create 0.000068, send 0.000404, recv 0.012653, ring 0.071429, delay 0.000003)
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO Bootstrap timings total 0.095263 (create 0.000057, send 0.000151, recv 0.064759, ring 0.029187, delay 0.000000)
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Bootstrap timings total 0.072265 (create 0.000067, send 0.000177, recv 0.000176, ring 0.038559, delay 0.000000)
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO Bootstrap timings total 0.103968 (create 0.000128, send 0.000405, recv 0.017156, ring 0.078104, delay 0.000002)
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO Setting affinity for GPU 1 to 01,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO NVLS multicast support is not available on dev 1
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Setting affinity for GPU 0 to 01,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO NVLS multicast support is not available on dev 2
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO NVLS multicast support is not available on dev 3
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO comm 0x61f87a0 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO Trees [0] 3/6/-1->2->-1 [1] 3/6/-1->2->-1 [2] 3/-1/-1->2->6 [3] 3/-1/-1->2->6
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO comm 0x627aec0 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 0/-1/-1->3->2 [2] 0/-1/-1->3->2 [3] 0/-1/-1->3->2
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO comm 0x60f3a40 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Channel 00/04 : 0 3 6 5 4 7 2 1
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Channel 01/04 : 0 3 6 5 4 7 2 1
+MOC-R4PCC04U37:574629:574660 [2] NCCL INFO [Proxy Service UDS] Device 2 CPU core 0
+MOC-R4PCC04U37:574629:574657 [2] NCCL INFO [Proxy Service] Device 2 CPU core 0
+MOC-R4PCC04U37:574629:574658 [3] NCCL INFO [Proxy Service] Device 3 CPU core 0
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO comm 0x6176080 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] -1/-1/-1->1->0 [3] -1/-1/-1->1->0
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U37:574629:574659 [3] NCCL INFO [Proxy Service UDS] Device 3 CPU core 0
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Channel 02/04 : 0 3 6 5 4 7 2 1
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Channel 03/04 : 0 3 6 5 4 7 2 1
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Trees [0] 1/-1/-1->0->3 [1] 1/-1/-1->0->3 [2] 1/-1/-1->0->3 [3] 1/-1/-1->0->3
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Check P2P Type intraNodeP2pSupport 1 directMode 1
+MOC-R4PCC04U37:574629:574661 [1] NCCL INFO [Proxy Service] Device 1 CPU core 0
+MOC-R4PCC04U37:574629:574662 [0] NCCL INFO [Proxy Service] Device 0 CPU core 0
+MOC-R4PCC04U37:574629:574663 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 0
+MOC-R4PCC04U37:574629:574664 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 0
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO NCCL_ALGO set by environment to RING
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Enabled NCCL Func/Proto/Algo Matrix:
+     Function |       LL     LL128    Simple   |          Tree           Ring  CollNetDirect   CollNetChain           NVLS       NVLSTree            PAT  
+    Broadcast |        1         2         1   |             0              1              0              0              0              0              0  
+       Reduce |        1         2         1   |             0              1              0              0              0              0              0  
+    AllGather |        1         2         1   |             0              1              0              0              0              0              0  
+ReduceScatter |        1         2         1   |             0              1              0              0              0              0              0  
+    AllReduce |        1         2         1   |             0              1              0              0              0              0              0  
+
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO CC Off, workFifoBytes 1048576
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO NCCL_ALGO set by environment to RING
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO NCCL_ALGO set by environment to RING
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO NCCL_ALGO set by environment to RING
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO ncclCommInitRank comm 0x60f3a40 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4a8fb6ecbba1a10a - Init COMPLETE
+MOC-R4PCC04U37:574629:574651 [0] NCCL INFO Init timings - ncclCommInitRank: rank 0 nranks 8 total 2.60 (kernels 1.02, alloc 0.89, bootstrap 0.07, allgathers 0.12, topo 0.45, graphs 0.01, connections 0.01, rest 0.02)
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO ncclCommInitRank comm 0x61f87a0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId a6000 commId 0x4a8fb6ecbba1a10a - Init COMPLETE
+MOC-R4PCC04U37:574629:574653 [2] NCCL INFO Init timings - ncclCommInitRank: rank 2 nranks 8 total 2.60 (kernels 1.03, alloc 0.86, bootstrap 0.10, allgathers 0.10, topo 0.47, graphs 0.01, connections 0.03, rest 0.01)
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO ncclCommInitRank comm 0x6176080 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 26000 commId 0x4a8fb6ecbba1a10a - Init COMPLETE
+MOC-R4PCC04U37:574629:574652 [1] NCCL INFO Init timings - ncclCommInitRank: rank 1 nranks 8 total 2.60 (kernels 1.02, alloc 0.85, bootstrap 0.10, allgathers 0.12, topo 0.45, graphs 0.00, connections 0.01, rest 0.04)
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO ncclCommInitRank comm 0x627aec0 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c6000 commId 0x4a8fb6ecbba1a10a - Init COMPLETE
+MOC-R4PCC04U37:574629:574654 [3] NCCL INFO Init timings - ncclCommInitRank: rank 3 nranks 8 total 2.60 (kernels 1.02, alloc 0.86, bootstrap 0.10, allgathers 0.08, topo 0.48, graphs 0.01, connections 0.02, rest 0.03)
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+MOC-R4PCC04U37:574629:574667 [1] NCCL INFO Channel 00/1 : 1[1] -> 2[2] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574667 [1] NCCL INFO Channel 02/1 : 1[1] -> 2[2] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574666 [2] NCCL INFO Channel 00/1 : 2[2] -> 3[3] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574666 [2] NCCL INFO Channel 02/1 : 2[2] -> 3[3] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574665 [3] NCCL INFO Channel 01/1 : 3[3] -> 4[0] [send] via NET/IB/1(2)/GDRDMA/Shared
+MOC-R4PCC04U37:574629:574665 [3] NCCL INFO Channel 03/1 : 3[3] -> 4[0] [send] via NET/IB/1(2)/GDRDMA/Shared
+MOC-R4PCC04U37:574629:574669 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 0
+MOC-R4PCC04U37:574629:574670 [2] NCCL INFO [Proxy Progress] Device 2 CPU core 256
+MOC-R4PCC04U37:574629:574668 [0] NCCL INFO Channel 01/1 : 7[3] -> 0[0] [receive] via NET/IB/1/GDRDMA/Shared
+MOC-R4PCC04U37:574629:574668 [0] NCCL INFO Channel 03/1 : 7[3] -> 0[0] [receive] via NET/IB/1/GDRDMA/Shared
+MOC-R4PCC04U37:574629:574668 [0] NCCL INFO Channel 00/1 : 0[0] -> 1[1] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574668 [0] NCCL INFO Channel 02/1 : 0[0] -> 1[1] via P2P/direct pointer
+MOC-R4PCC04U37:574629:574657 [2] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.
+  1073741824     268435456     float     sum      -1   191953    5.59    5.59      0   190953    5.62    5.62    N/A
+  3221225472     805306368     float     sum      -1   557878    5.77    5.77      0   557761    5.78    5.78    N/A
+  5368709120    1342177280     float     sum      -1   926234    5.80    5.80      0   948827    5.66    5.66    N/A
+  7516192768    1879048192     float     sum      -1  1296782    5.80    5.80      0  1291612    5.82    5.82    N/A
+  9663676416    2415919104     float     sum      -1  1659101    5.82    5.82      0  1659115    5.82    5.82    N/A
+ 11811160064    2952790016     float     sum      -1  2025826    5.83    5.83      0  2024793    5.83    5.83    N/A
+ 13958643712    3489660928     float     sum      -1  2391151    5.84    5.84      0  2391502    5.84    5.84    N/A
+ 16106127360    4026531840     float     sum      -1  2758249    5.84    5.84      0  2755503    5.85    5.85    N/A
+ 18253611008    4563402752     float     sum      -1  3124089    5.84    5.84      0  3122601    5.85    5.85    N/A
+ 20401094656    5100273664     float     sum      -1  3490819    5.84    5.84      0  3488824    5.85    5.85    N/A
+ 22548578304    5637144576     float     sum      -1  3855140    5.85    5.85      0  3854158    5.85    5.85    N/A
+ 24696061952    6174015488     float     sum      -1  4223296    5.85    5.85      0  4221307    5.85    5.85    N/A
+ 26843545600    6710886400     float     sum      -1  4586620    5.85    5.85      0  4582552    5.86    5.86    N/A
+MOC-R4PCC04U37:574629:574686 [0] NCCL INFO comm 0x60f3a40 rank 0 nranks 8 cudaDev 0 busId 6000 - Destroy COMPLETE
+MOC-R4PCC04U37:574629:574686 [3] NCCL INFO comm 0x627aec0 rank 3 nranks 8 cudaDev 3 busId c6000 - Destroy COMPLETE
+MOC-R4PCC04U37:574629:574686 [2] NCCL INFO comm 0x61f87a0 rank 2 nranks 8 cudaDev 2 busId a6000 - Destroy COMPLETE
+MOC-R4PCC04U37:574629:574686 [1] NCCL INFO comm 0x6176080 rank 1 nranks 8 cudaDev 1 busId 26000 - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 5.80752 
+#
+

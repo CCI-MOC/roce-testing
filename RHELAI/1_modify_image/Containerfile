@@ -1,0 +1,28 @@
+ARG NVIDIA_IMAGE_VERSION=1.4
+FROM registry.redhat.io/rhelai1/bootc-nvidia-rhel9:${NVIDIA_IMAGE_VERSION}
+
+RUN dnf install -y gcc g++ git libevent-devel hwloc hwloc-devel libfabric-devel ucx-devel wget make gcc pmix-devel rdma-core perftest zlib-devel wireshark-cli
+
+RUN echo "* soft memlock unlimited\n* hard memlock unlimited" >> /etc/security/limits.conf
+RUN echo "ulimit -l unlimited" >> /etc/profile
+
+
+RUN wget https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
+RUN tar xvf openmpi-5.0.5.tar.gz
+RUN OVERLAY_ID=$(find /usr/lib/containers/storage/overlay -name cuda.h | head -n 1 | awk -F'/' '{print $7}') &&  CUDA_HOME=/usr/lib/containers/storage/overlay/$OVERLAY_ID/diff/usr/local/cuda-12.4 &&  cd openmpi-5.0.5 && ./configure --prefix=/opt/openmpi    --enable-mpi-ext=cuda    --with-cuda=$CUDA_HOME    --with-cuda-libdir=/usr/local/cuda/lib64    --with-ucx --with-libfabric --enable-builtin-atomics    --without-cma --with-libevent=external    --with-hwloc=external --disable-silent-rules    --enable-ipv6 --with-devel-headers    --with-slurm --with-sge --without-tm --with-zlib    --enable-heterogeneous 2>&1 | tee config.out && make -j32 &&  make install
+ENV PATH=/opt/openmpi/bin/:$PATH
+ENV LD_LIBRARY_PATH=/opt/openmpi/lib/:$LD_LIBRARY_PATH
+
+RUN git clone https://github.com/NVIDIA/nccl.git
+RUN OVERLAY_ID=$(find /usr/lib/containers/storage/overlay -name cuda.h | head -n 1 | awk -F'/' '{print $7}') &&  CUDA_HOME=/usr/lib/containers/storage/overlay/$OVERLAY_ID/diff/usr/local/cuda-12.4 &&  cd nccl && make -j16 src.build  CUDA_HOME=$CUDA_HOME && make install PREFIX=/opt/nccl CUDA_HOME=$CUDA_HOME
+
+ENV LD_LIBRARY_PATH=/opt/nccl/lib/:$LD_LIBRARY_PATH
+
+RUN git clone https://github.com/NVIDIA/nccl-tests.git
+RUN OVERLAY_ID=$(find /usr/lib/containers/storage/overlay -name cuda.h | head -n 1 | awk -F'/' '{print $7}') &&  CUDA_HOME=/usr/lib/containers/storage/overlay/$OVERLAY_ID/diff/usr/local/cuda-12.4 &&   cd nccl-tests && make BUILDDIR=/opt/nccl-tests -j16 MPI=1 MPI_HOME=/opt/openmpi NCCL_HOME=/opt/nccl CUDA_HOME=$CUDA_HOME
+
+RUN rm -rf openmpi-5.0.5
+RUN rm openmpi-5.0.5.tar.gz
+RUN rm -rf nccl
+RUN rm -rf nccl-test
+

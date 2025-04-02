@@ -43,6 +43,7 @@ ib_read_bw:	ib_read_bw	-d 	$NCCL_IB_HCA	-a	-l 128 --recv_post_list=128 -b -m 409
 
  Largest average bandwidth achieved w/o -b (bidirectional) flag 
 | ib_send_bw (MB/s) | ib_write_bw (MB/s) | ib_read_bw (MB/s) | ib_send_bw (Gbps) | ib_write_bw (Gbps) | ib_read_bw (Gbps) | Peak (Gbps)|
+|------------------|-------------------|------------------|------------------|-------------------|------------------|------|
 | 26917.76         | 26902.00          | 10256.88         | 210              | 210               | 80               | 400  |
 
 

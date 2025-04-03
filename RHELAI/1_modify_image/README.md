@@ -1,5 +1,8 @@
 ## Modifying the base RHELAI image
 
+Method based on [this](https://github.com/larsks/moc-bootc-rhelai-nvidia) repo. 
+
+
 
 Login to registry service account using podman
 

@@ -1,11 +1,11 @@
 ARG NVIDIA_IMAGE_VERSION=1.4
 FROM registry.redhat.io/rhelai1/bootc-nvidia-rhel9:${NVIDIA_IMAGE_VERSION}
 
+COPY override.conf /etc/systemd/system/bootc-generic-growpart.service.d/override.conf
+
 RUN dnf install -y gcc g++ git libevent-devel hwloc hwloc-devel libfabric-devel ucx-devel wget make gcc pmix-devel rdma-core perftest zlib-devel wireshark-cli
 
-RUN echo "* soft memlock unlimited\n* hard memlock unlimited" >> /etc/security/limits.conf
-RUN echo "ulimit -l unlimited" >> /etc/profile
-
+RUN echo -e "* soft memlock unlimited\n* hard memlock unlimited" >> /etc/security/limits.conf
 
 RUN wget https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
 RUN tar xvf openmpi-5.0.5.tar.gz

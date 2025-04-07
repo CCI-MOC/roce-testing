@@ -47,6 +47,11 @@ push to local registry
 `sudo podman push localhost:5000/moc-roce-rhelai-nvidia:1.4`
 
 
+test it (optional)
+
+`sudo podman run --rm -it --device nvidia.com/gpu=all --security-opt=label=disable --entrypoint /bin/bash --privileged --network host --name node --shm-size 10.24g localhost:5000/moc-roce-rhelai-nvidia:1.4`
+
+
 And then switch
 
 
@@ -54,9 +59,3 @@ And then switch
 
 
 Finally, reboot
-
-
-Set ulimit to unlimited
-
-
-`sudo ulimit -l unlimited`

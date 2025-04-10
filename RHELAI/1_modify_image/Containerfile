@@ -3,7 +3,7 @@ FROM registry.redhat.io/rhelai1/bootc-nvidia-rhel9:${NVIDIA_IMAGE_VERSION}
 
 COPY override.conf /etc/systemd/system/bootc-generic-growpart.service.d/override.conf
 
-RUN dnf install -y gcc g++ git libevent-devel hwloc hwloc-devel libfabric-devel ucx-devel wget make gcc pmix-devel rdma-core perftest zlib-devel wireshark-cli
+RUN dnf install -y gcc g++ git libevent-devel hwloc hwloc-devel libfabric-devel ucx-devel wget make gcc pmix-devel rdma-core perftest zlib-devel wireshark-cli libibverbs-utils
 
 RUN echo -e "* soft memlock unlimited\n* hard memlock unlimited" >> /etc/security/limits.conf
 RUN echo "ulimit -l unlimited" > /etc/profile.d/ulimit.sh
@@ -32,8 +32,5 @@ RUN OVERLAY_ID=$(find /usr/lib/containers/storage/overlay -name python3.11 | hea
     LIB_PATH="/usr/lib/containers/storage/overlay/${OVERLAY_ID}/diff/usr/lib" && \
     LIB64_PATH="/usr/lib/containers/storage/overlay/${OVERLAY_ID}/diff/usr/lib64" && \
     BIN_PATH="/usr/lib/containers/storage/overlay/${OVERLAY_ID}/diff/usr/bin" && \
-    PYTHON_LIB="${LIB_PATH}/python3.11" && \
-    PYTHON_LIB64="${LIB64_PATH}/python3.11" && \
     echo "export PATH=${PATH}:${BIN_PATH}" >> /etc/profile.d/user-env.sh && \
-    echo "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PYTHON_LIB64}:${LIB_PATH}:${LIB64_PATH}:/opt/nccl/lib" >> /etc/profile.d/user-env.sh && \
-    echo "export PYTHONPATH=/usr/lib/containers/storage/overlay/${OVERLAY_ID}/diff/opt/app-root/lib/python3.11/site-packages" >> /etc/profile.d/user-env.sh
+    echo "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${LIB_PATH}:${LIB64_PATH}" >> /etc/profile.d/user-env.sh 

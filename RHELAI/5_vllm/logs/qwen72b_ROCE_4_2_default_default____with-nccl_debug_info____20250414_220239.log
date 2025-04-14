@@ -1,0 +1,1245 @@
+# Index
+1. System Info
+2. Python Packages
+3. Commands
+4. Ray Status
+5. Errors
+6. Nsys
+7.Completion Commands (Optional)
+
+
+### System Info - Local ###
+MY_IP: 172.16.96.19
+REMOTE_IP: 172.16.96.20
+ROCE_MY_IP: 169.254.87.44
+ROCE_REMOTE_IP: 169.254.229.118
+NCCL_IB_HCA: mlx5_5
+NCCL_SOCKET_IFNAME: eno7np0
+NCCL_IB_DISABLE: 0
+MASTER_PORT: 29500
+MASTER_ADDR: 169.254.87.44
+NCCL_IB_GID_INDEX: 3
+
+
+### Local RHEL Version ###
+NAME="Red Hat Enterprise Linux"
+VERSION="9.20250220.0.4 (Plow)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="9.4"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Red Hat Enterprise Linux 9.20250220.0.4 (Plow)"
+ANSI_COLOR="0;31"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:9::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9"
+BUG_REPORT_URL="https://issues.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 9"
+REDHAT_BUGZILLA_PRODUCT_VERSION=9.4
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.4"
+OSTREE_VERSION='9.20250220.0'
+VARIANT="RHEL AI"
+VARIANT_ID=rhel_ai
+RHEL_AI_VERSION_ID='1.4.0'
+
+
+
+### Local Kernel Version ###
+5.14.0-427.55.1.el9_4.x86_64
+
+
+### Local System Specs ###
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 4 CUDA devices:
+  Device 0: NVIDIA H100 80GB HBM3, compute capability 9.0, VMM: yes
+  Device 1: NVIDIA H100 80GB HBM3, compute capability 9.0, VMM: yes
+  Device 2: NVIDIA H100 80GB HBM3, compute capability 9.0, VMM: yes
+  Device 3: NVIDIA H100 80GB HBM3, compute capability 9.0, VMM: yes
+Platform:
+  sys.version: 3.11.7 (main, Jan  8 2025, 00:00:00) [GCC 11.4.1 20231218 (Red Hat 11.4.1-3)]
+  sys.platform: linux
+  os.name: posix
+  platform.release: 5.14.0-427.55.1.el9_4.x86_64
+  platform.machine: x86_64
+  platform.node: MOC-R4PCC04U38
+  platform.python_version: 3.11.7
+  os-release.ID: rhel
+  os-release.VERSION_ID: 9.4
+  os-release.PRETTY_NAME: Red Hat Enterprise Linux 9.4 (Plow)
+  memory.total: 1511.39 GB
+  memory.available: 1473.73 GB
+  memory.used: 16.05 GB
+
+InstructLab:
+  instructlab.version: 0.23.5
+  instructlab-dolomite.version: 0.2.0
+  instructlab-eval.version: 0.5.1
+  instructlab-quantize.version: 0.1.0
+  instructlab-schema.version: 0.4.2
+  instructlab-sdg.version: 0.7.2
+  instructlab-training.version: 0.7.0
+
+Torch:
+  torch.version: 2.5.1
+  torch.backends.cpu.capability: AVX512
+  torch.version.cuda: 12.4
+  torch.version.hip: None
+  torch.cuda.available: True
+  torch.backends.cuda.is_built: True
+  torch.backends.mps.is_built: False
+  torch.backends.mps.is_available: False
+  torch.cuda.bf16: True
+  torch.cuda.current.device: 0
+  torch.cuda.0.name: NVIDIA H100 80GB HBM3
+  torch.cuda.0.free: 78.6 GB
+  torch.cuda.0.total: 79.1 GB
+  torch.cuda.0.capability: 9.0 (see https://developer.nvidia.com/cuda-gpus#compute)
+  torch.cuda.1.name: NVIDIA H100 80GB HBM3
+  torch.cuda.1.free: 78.6 GB
+  torch.cuda.1.total: 79.1 GB
+  torch.cuda.1.capability: 9.0 (see https://developer.nvidia.com/cuda-gpus#compute)
+  torch.cuda.2.name: NVIDIA H100 80GB HBM3
+  torch.cuda.2.free: 78.6 GB
+  torch.cuda.2.total: 79.1 GB
+  torch.cuda.2.capability: 9.0 (see https://developer.nvidia.com/cuda-gpus#compute)
+  torch.cuda.3.name: NVIDIA H100 80GB HBM3
+  torch.cuda.3.free: 78.6 GB
+  torch.cuda.3.total: 79.1 GB
+  torch.cuda.3.capability: 9.0 (see https://developer.nvidia.com/cuda-gpus#compute)
+
+llama_cpp_python:
+  llama_cpp_python.version: 0.3.2
+  llama_cpp_python.supports_gpu_offload: True
+
+
+
+### Local NCCL_IB_HCA Props ###
+
+
+
+### Local vLLM Version ###
+INFO 04-14 22:03:02 [__init__.py:239] Automatically detected platform cuda.
+0.8.3
+
+
+
+### System Info - Remote ###
+MY_IP: 172.16.96.19
+REMOTE_IP: 172.16.96.20
+ROCE_MY_IP: 169.254.87.44
+ROCE_REMOTE_IP: 169.254.229.118
+NCCL_IB_HCA: mlx5_5
+NCCL_SOCKET_IFNAME: eno7np0
+NCCL_IB_DISABLE: 0
+MASTER_PORT: 29500
+MASTER_ADDR: 169.254.87.44
+NCCL_IB_GID_INDEX: 3
+
+
+
+### Python Packages ###
+Package                                  Version
+---------------------------------------- -------------
+accelerate                               1.6.0
+aiohappyeyeballs                         2.6.1
+aiohttp                                  3.11.16
+aiosignal                                1.3.2
+aiosqlite                                0.21.0
+airportsdata                             20250224
+altair                                   5.5.0
+annotated-types                          0.7.0
+anyio                                    4.9.0
+astor                                    0.8.1
+attrs                                    25.3.0
+autoevals                                0.0.126
+blake3                                   1.0.4
+blinker                                  1.9.0
+blobfile                                 3.0.0
+braintrust_core                          0.0.58
+cachetools                               5.5.2
+certifi                                  2025.1.31
+chardet                                  5.2.0
+charset-normalizer                       3.4.1
+chevron                                  0.14.0
+click                                    8.1.8
+cloudpickle                              3.1.1
+compressed-tensors                       0.9.2
+cupy-cuda12x                             13.4.1
+datasets                                 3.5.0
+Deprecated                               1.2.18
+depyf                                    0.18.0
+dill                                     0.3.8
+diskcache                                5.6.3
+distro                                   1.9.0
+dnspython                                2.7.0
+einops                                   0.8.1
+email_validator                          2.2.0
+faiss-cpu                                1.10.0
+fastapi                                  0.115.12
+fastapi-cli                              0.0.7
+fastrlock                                0.8.3
+filelock                                 3.18.0
+fire                                     0.7.0
+frozenlist                               1.5.0
+fsspec                                   2024.12.0
+gguf                                     0.10.0
+gitdb                                    4.0.12
+GitPython                                3.1.44
+googleapis-common-protos                 1.69.2
+grpcio                                   1.71.0
+h11                                      0.14.0
+hf-xet                                   1.0.2
+httpcore                                 1.0.7
+httptools                                0.6.4
+httpx                                    0.28.1
+httpx-sse                                0.4.0
+huggingface-hub                          0.30.1
+idna                                     3.10
+importlib_metadata                       8.6.1
+interegular                              0.3.3
+Jinja2                                   3.1.6
+jiter                                    0.9.0
+joblib                                   1.4.2
+jsonschema                               4.23.0
+jsonschema-specifications                2024.10.1
+lark                                     1.2.2
+llama_stack                              0.2.1
+llama_stack_client                       0.2.1
+llguidance                               0.7.13
+llvmlite                                 0.44.0
+lm-format-enforcer                       0.10.11
+lxml                                     5.3.2
+markdown-it-py                           3.0.0
+MarkupSafe                               3.0.2
+mcp                                      1.6.0
+mdurl                                    0.1.2
+mistral_common                           1.5.4
+mpmath                                   1.3.0
+msgpack                                  1.1.0
+msgspec                                  0.19.0
+multidict                                6.3.2
+multiprocess                             0.70.16
+nanobind                                 2.6.1
+narwhals                                 1.34.0
+nest-asyncio                             1.6.0
+networkx                                 3.4.2
+ninja                                    1.11.1.4
+numba                                    0.61.0
+numpy                                    2.1.3
+nvidia-cublas-cu12                       12.4.5.8
+nvidia-cuda-cupti-cu12                   12.4.127
+nvidia-cuda-nvrtc-cu12                   12.4.127
+nvidia-cuda-runtime-cu12                 12.4.127
+nvidia-cudnn-cu12                        9.1.0.70
+nvidia-cufft-cu12                        11.2.1.3
+nvidia-curand-cu12                       10.3.5.147
+nvidia-cusolver-cu12                     11.6.1.9
+nvidia-cusparse-cu12                     12.3.1.170
+nvidia-cusparselt-cu12                   0.6.2
+nvidia-nccl-cu12                         2.21.5
+nvidia-nvjitlink-cu12                    12.4.127
+nvidia-nvtx-cu12                         12.4.127
+openai                                   1.71.0
+opencv-python-headless                   4.11.0.86
+opentelemetry-api                        1.31.1
+opentelemetry-exporter-otlp              1.31.1
+opentelemetry-exporter-otlp-proto-common 1.31.1
+opentelemetry-exporter-otlp-proto-grpc   1.31.1
+opentelemetry-exporter-otlp-proto-http   1.31.1
+opentelemetry-instrumentation            0.52b1
+opentelemetry-proto                      1.31.1
+opentelemetry-sdk                        1.31.1
+opentelemetry-semantic-conventions       0.52b1
+outlines                                 0.1.11
+outlines_core                            0.1.26
+packaging                                24.2
+pandas                                   2.2.3
+partial-json-parser                      0.2.1.1.post5
+pillow                                   11.1.0
+pip                                      25.0.1
+podman-compose                           1.3.0
+polyleven                                0.9.0
+prometheus_client                        0.21.1
+prometheus-fastapi-instrumentator        7.1.0
+prompt_toolkit                           3.0.50
+propcache                                0.3.1
+protobuf                                 5.29.4
+psutil                                   7.0.0
+py-cpuinfo                               9.0.0
+pyaml                                    25.1.0
+pyarrow                                  19.0.1
+pycountry                                24.6.1
+pycryptodomex                            3.22.0
+pydantic                                 2.11.2
+pydantic_core                            2.33.1
+pydantic-settings                        2.8.1
+pydeck                                   0.9.1
+Pygments                                 2.19.1
+pypdf                                    5.4.0
+python-dateutil                          2.9.0.post0
+python-dotenv                            1.1.0
+python-json-logger                       3.3.0
+python-multipart                         0.0.20
+pytz                                     2025.2
+PyYAML                                   6.0.2
+pyzmq                                    26.4.0
+ray                                      2.43.0
+referencing                              0.36.2
+regex                                    2024.11.6
+requests                                 2.32.3
+rich                                     14.0.0
+rich-toolkit                             0.14.1
+rpds-py                                  0.24.0
+safetensors                              0.5.3
+scikit-learn                             1.6.1
+scipy                                    1.15.2
+sentence-transformers                    4.0.2
+sentencepiece                            0.2.0
+setuptools                               78.1.0
+shellingham                              1.5.4
+six                                      1.17.0
+smmap                                    5.0.2
+sniffio                                  1.3.1
+sse-starlette                            2.2.1
+starlette                                0.46.1
+streamlit                                1.44.1
+streamlit-option-menu                    0.4.0
+sympy                                    1.13.1
+tenacity                                 9.1.2
+termcolor                                3.0.1
+threadpoolctl                            3.6.0
+tiktoken                                 0.9.0
+tokenizers                               0.21.1
+toml                                     0.10.2
+torch                                    2.6.0
+torchaudio                               2.6.0
+torchvision                              0.21.0
+tornado                                  6.4.2
+tqdm                                     4.67.1
+transformers                             4.51.0
+triton                                   3.2.0
+typer                                    0.15.2
+typing_extensions                        4.13.1
+typing-inspection                        0.4.0
+tzdata                                   2025.2
+urllib3                                  2.3.0
+uvicorn                                  0.34.0
+uvloop                                   0.21.0
+vllm                                     0.8.3
+watchdog                                 6.0.0
+watchfiles                               1.0.4
+wcwidth                                  0.2.13
+websockets                               15.0.1
+wheel                                    0.45.1
+wrapt                                    1.17.2
+xformers                                 0.0.29.post2
+xgrammar                                 0.1.17
+xxhash                                   3.5.0
+yarl                                     1.19.0
+zipp                                     3.21.0
+
+
+
+### Commands - Local Ray ###
+NCCL_IB_DISABLE='0' NCCL_SOCKET_IFNAME=eno8np0 GLOO_SOCKET_IFNAME=eno8np0 VLLM_HOST_IP=169.254.87.44 ray start --block --head --port=29500 --node-ip-address=169.254.87.44 --num-gpus=4 --num-cpus=64
+
+
+### Commands - Remote Ray ###
+cd /home/ahmed/roce-testing/RHELAI/5_vllm && source vllm/bin/activate && NCCL_IB_DISABLE='0' NCCL_SOCKET_IFNAME=eno8np0 GLOO_SOCKET_IFNAME=eno8np0 VLLM_HOST_IP=$ROCE_MY_IP ray start --block --address=$MASTER_ADDR:$MASTER_PORT --num-gpus=4 --num-cpus=64
+
+
+### Ray Status ###
+======== Autoscaler status: 2025-04-14 22:03:28.786213 ========
+Node status
+---------------------------------------------------------------
+Active:
+ 1 node_4451b323c95e95d201682670630da7133cd4a6eafc6b36af60b548c2
+ 1 node_b82bd65f8f1b26c79517ad19d282a2529c94637fcb39879f918ca30f
+Pending:
+ (no pending nodes)
+Recent failures:
+ (no failures)
+
+Resources
+---------------------------------------------------------------
+Usage:
+ 0.0/128.0 CPU
+ 0.0/8.0 GPU
+ 0B/2.55TiB memory
+ 0B/372.53GiB object_store_memory
+
+Demands:
+ (no resource demands)
+
+
+
+### Commands - vLLM Serve ###
+NCCL_IB_DISABLE='0' NCCL_SOCKET_IFNAME=eno8np0 GLOO_SOCKET_IFNAME=eno8np0 VLLM_HOST_IP=169.254.87.44 vllm serve ./models/qwen72b --tensor-parallel-size 4 --pipeline-parallel-size 2
+
+### vLLM Serve Output ###
+INFO 04-14 22:03:39 [__init__.py:239] Automatically detected platform cuda.
+INFO 04-14 22:03:42 [api_server.py:1034] vLLM API server version 0.8.3
+INFO 04-14 22:03:42 [api_server.py:1035] args: Namespace(subparser='serve', model_tag='./models/qwen72b', config='', host=None, port=8000, uvicorn_log_level='info', disable_uvicorn_access_log=False, allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, chat_template_content_format='auto', response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, enable_ssl_refresh=False, ssl_cert_reqs=0, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_request_id_headers=False, enable_auto_tool_choice=False, tool_call_parser=None, tool_parser_plugin='', model='./models/qwen72b', task='auto', tokenizer=None, hf_config_path=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, allowed_local_media_path=None, download_dir=None, load_format='auto', config_format=<ConfigFormat.AUTO: 'auto'>, dtype='auto', kv_cache_dtype='auto', max_model_len=None, guided_decoding_backend='xgrammar', logits_processor_pattern=None, model_impl='auto', distributed_executor_backend=None, pipeline_parallel_size=2, tensor_parallel_size=4, data_parallel_size=1, enable_expert_parallel=False, max_parallel_loading_workers=None, ray_workers_use_nsight=False, block_size=None, enable_prefix_caching=None, prefix_caching_hash_algo='builtin', disable_sliding_window=False, use_v2_block_manager=True, num_lookahead_slots=0, seed=None, swap_space=4, cpu_offload_gb=0, gpu_memory_utilization=0.9, num_gpu_blocks_override=None, max_num_batched_tokens=None, max_num_partial_prefills=1, max_long_partial_prefills=1, long_prefill_token_threshold=0, max_num_seqs=None, max_logprobs=20, disable_log_stats=False, quantization=None, rope_scaling=None, rope_theta=None, hf_overrides=None, enforce_eager=False, max_seq_len_to_capture=8192, disable_custom_all_reduce=False, tokenizer_pool_size=0, tokenizer_pool_type='ray', tokenizer_pool_extra_config=None, limit_mm_per_prompt=None, mm_processor_kwargs=None, disable_mm_preprocessor_cache=False, enable_lora=False, enable_lora_bias=False, max_loras=1, max_lora_rank=16, lora_extra_vocab_size=256, lora_dtype='auto', long_lora_scaling_factors=None, max_cpu_loras=None, fully_sharded_loras=False, enable_prompt_adapter=False, max_prompt_adapters=1, max_prompt_adapter_token=0, device='auto', num_scheduler_steps=1, use_tqdm_on_load=True, multi_step_stream_outputs=True, scheduler_delay_factor=0.0, enable_chunked_prefill=None, speculative_config=None, model_loader_extra_config=None, ignore_patterns=[], preemption_mode=None, served_model_name=None, qlora_adapter_name_or_path=None, show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, disable_async_output_proc=False, scheduling_policy='fcfs', scheduler_cls='vllm.core.scheduler.Scheduler', override_neuron_config=None, override_pooler_config=None, compilation_config=None, kv_transfer_config=None, worker_cls='auto', worker_extension_cls='', generation_config='auto', override_generation_config=None, enable_sleep_mode=False, calculate_kv_scales=False, additional_config=None, enable_reasoning=False, reasoning_parser=None, disable_cascade_attn=False, disable_log_requests=False, max_log_len=None, disable_fastapi_docs=False, enable_prompt_tokens_details=False, enable_server_load_tracking=False, dispatch_function=<function ServeSubcommand.cmd at 0x7f7c0d9614e0>)
+INFO 04-14 22:03:56 [config.py:600] This model supports multiple tasks: {'score', 'reward', 'classify', 'embed', 'generate'}. Defaulting to 'generate'.
+WARNING 04-14 22:03:57 [arg_utils.py:1708] Pipeline Parallelism without Ray distributed executor is not supported by the V1 Engine. Falling back to V0. 
+WARNING 04-14 22:03:57 [arg_utils.py:1581] The model has a long context length (128000). This may causeOOM during the initial memory profiling phase, or result in low performance due to small KV cache size. Consider setting --max-model-len to a smaller value.
+INFO 04-14 22:03:57 [config.py:1600] Defaulting to use ray for distributed inference
+INFO 04-14 22:03:57 [llm_engine.py:242] Initializing a V0 LLM engine (v0.8.3) with config: model='./models/qwen72b', speculative_config=None, tokenizer='./models/qwen72b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=128000, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=2, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=./models/qwen72b, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=None, chunked_prefill_enabled=False, use_async_output_proc=False, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+2025-04-14 22:03:58,394	INFO worker.py:1654 -- Connecting to existing Ray cluster at address: 169.254.87.44:29500...
+2025-04-14 22:03:58,412	INFO worker.py:1841 -- Connected to Ray cluster.
+INFO 04-14 22:04:00 [ray_utils.py:335] No current placement group found. Creating a new placement group.
+INFO 04-14 22:04:01 [ray_distributed_executor.py:176] use_ray_spmd_worker: False
+[36m(pid=107655)[0m INFO 04-14 22:04:08 [__init__.py:239] Automatically detected platform cuda.
+INFO 04-14 22:04:14 [ray_distributed_executor.py:352] non_carry_over_env_vars from config: set()
+INFO 04-14 22:04:14 [ray_distributed_executor.py:354] Copying the following environment variables to workers: ['LD_LIBRARY_PATH', 'VLLM_WORKER_MULTIPROC_METHOD', 'VLLM_USE_V1']
+INFO 04-14 22:04:14 [ray_distributed_executor.py:357] If certain env vars should NOT be copied to workers, add them to /home/ahmed/.config/vllm/ray_non_carry_over_env_vars.json file
+INFO 04-14 22:04:16 [cuda.py:292] Using Flash Attention backend.
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:17 [cuda.py:292] Using Flash Attention backend.
+[36m(pid=27447, ip=169.254.229.118)[0m INFO 04-14 22:04:11 [__init__.py:239] Automatically detected platform cuda.[32m [repeated 7x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+INFO 04-14 22:04:27 [utils.py:990] Found nccl from library libnccl.so.2
+INFO 04-14 22:04:27 [pynccl.py:69] vLLM is using nccl==2.21.5
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno8np0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Bootstrap : Using eno8np0:172.16.96.19<0>
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.21.5+cuda12.4
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno8np0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NCCL_IB_HCA set to mlx5_5
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NET/IB : Using [0]mlx5_5:1/RoCE [RO]; OOB eno8np0:172.16.96.19<0>
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Using non-device net plugin version 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Using network IB
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO DMA-BUF is available on GPU device 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO ncclCommInitRank comm 0x55bc7bfcde50 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0xb59f2abc5470b491 - Init START
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO comm 0x55bc7bfcde50 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 01/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 02/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 03/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 04/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 05/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 07/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 08/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 09/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 10/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 11/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 13/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 14/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 15/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 16/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 17/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 19/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 20/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 21/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 22/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 23/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 2/-1/-1->0->-1 [5] 2/-1/-1->0->-1 [6] 2/-1/-1->0->-1 [7] 2/-1/-1->0->-1 [8] 3/-1/-1->0->1 [9] 3/-1/-1->0->1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 2/-1/-1->0->-1 [17] 2/-1/-1->0->-1 [18] 2/-1/-1->0->-1 [19] 2/-1/-1->0->-1 [20] 3/-1/-1->0->1 [21] 3/-1/-1->0->1 [22] 3/-1/-1->0->1 [23] 3/-1/-1->0->1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO P2P Chunksize set to 524288
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 14/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 15/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 20/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 21/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 16/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 17/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 22/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 23/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Connected all rings
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 04/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 05/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 06/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 07/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 16/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 17/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 18/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 19/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 08/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 09/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 20/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 21/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Connected all trees
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+MOC-R4PCC04U38:107351:107351 [0] NCCL[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:27 [utils.py:990] Found nccl from library libnccl.so.2
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:27 [pynccl.py:69] vLLM is using nccl==2.21.5
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:17 [cuda.py:292] Using Flash Attention backend.[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO cudaDriverVersion 12040
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno8np0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Bootstrap : Using eno8np0:172.16.96.19<0>
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno8np0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NCCL_IB_HCA set to mlx5_5
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NET/IB : Using [0]mlx5_5:1/RoCE [RO]; OOB eno8np0:172.16.96.19<0>
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Using non-device net plugin version 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Using network IB
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO DMA-BUF is available on GPU device 2
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO ncclCommInitRank comm 0x55b85fb7c580 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0xb59f2abc5470b491 - Init START
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO NVLS multicast support is not available on dev 2
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO comm 0x55b85fb7c580 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 1/-1/-1->2->0 [5] 1/-1/-1->2->0 [6] 1/-1/-1->2->0 [7] 1/-1/-1->2->0 [8] -1/-1/-1->2->3 [9] -1/-1/-1->2->3 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 1/-1/-1->2->0 [17] 1/-1/-1->2->0 [18] 1/-1/-1->2->0 [19] 1/-1/-1->2->0 [20] -1/-1/-1->2->3 [21] -1/-1/-1->2->3 [22] -1/-1/-1->2->3 [23] -1/-1/-1->2->3
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO P2P Chunksize set to 524288
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 13/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 16/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 19/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 22/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MO
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:107654 [1] NCCL 
+INFO 04-14 22:04:32 [custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/ahmed/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+INFO 04-14 22:04:32 [shm_broadcast.py:264] vLLM message queue communication handle: Handle(local_reader_ranks=[1, 2, 3], buffer_handle=(3, 4194304, 6, 'psm_f8842a28'), local_subscribe_addr='ipc:///tmp/e2ebd894-d219-436f-aba3-702856e3b6fe', remote_subscribe_addr=None, remote_addr_ipv6=False)
+INFO 04-14 22:04:32 [utils.py:990] Found nccl from library libnccl.so.2
+INFO 04-14 22:04:32 [pynccl.py:69] vLLM is using nccl==2.21.5
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:32 [custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/ahmed/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Connected all rings
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Connected all trees
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO ncclCommInitRank comm 0x55b85fb7c580 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0xb59f2abc5470b491 - Init COMPLETE
+[36m(RayWorkerWrapper pid=107655)[0m NCCL version 2.21.5+cuda12.4
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:32 [utils.py:990] Found nccl from library libnccl.so.2[32m [repeated 7x across cluster][0m
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:32 [pynccl.py:69] vLLM is using nccl==2.21.5[32m [repeated 7x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m INFO Channel 14/0 : 1[1] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107656)[0m P/IPC
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m INFO 04-14 22:04:32 [shm_broadcast.py:264] vLLM message queue communication handle: Handle(local_reader_ranks=[1, 2, 3], buffer_handle=(3, 4194304, 6, 'psm_0b6d5c58'), local_subscribe_addr='ipc:///tmp/69f721ba-adcb-440a-aa87-b5dfbd19feb2', remote_subscribe_addr=None, remote_addr_ipv6=False)
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:32 [parallel_state.py:957] rank 2 in world size 8 is assigned as DP rank 0, PP rank 0, TP rank 2
+INFO 04-14 22:04:32 [parallel_state.py:957] rank 0 in world size 8 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 04-14 22:04:33 [model_runner.py:1110] Starting to load model ./models/qwen72b...
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:04:33 [model_runner.py:1110] Starting to load model ./models/qwen72b...
+[36m(RayWorkerWrapper pid=107655)[0m WARNING 04-14 22:04:33 [vision.py:101] Current `vllm-flash-attn` has a bug inside vision module, so we use xformers backend instead. You can run `pip install flash-attn` to use flash-attention backend.
+WARNING 04-14 22:04:33 [vision.py:101] Current `vllm-flash-attn` has a bug inside vision module, so we use xformers backend instead. You can run `pip install flash-attn` to use flash-attention backend.
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:46 [config.py:3334] cudagraph sizes specified by model runner [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256] is overridden by config [256, 128, 2, 1, 4, 136, 8, 144, 16, 152, 24, 160, 32, 168, 40, 176, 48, 184, 56, 192, 64, 200, 72, 208, 80, 216, 88, 120, 224, 96, 232, 104, 240, 112, 248]
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO cudaDriverVersion 12040[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eno8np0[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Bootstrap : Using eno8np0:172.16.96.19<0>[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NET/Plugin: Using internal network plugin.[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NCCL_IB_HCA set to mlx5_5[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NET/IB : Using [0]mlx5_5:1/RoCE [RO]; OOB eno8np0:172.16.96.19<0>[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Using non-device net plugin version 0[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Using network IB[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO DMA-BUF is available on GPU device 3[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO ncclCommInitRank comm 0x55fafe588760 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0xb59f2abc5470b491 - Init START[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO NVLS multicast support is not available on dev 3[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO comm 0x55fafe588760 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->1 [5] -1/-1/-1->3->1 [6] -1/-1/-1->3->1 [7] -1/-1/-1->3->1 [8] 2/-1/-1->3->0 [9] 2/-1/-1->3->0 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->1 [17] -1/-1/-1->3->1 [18] -1/-1/-1->3->1 [19] -1/-1/-1->3->1 [20] 2/-1/-1->3->0 [21] 2/-1/-1->3->0 [22] 2/-1/-1->3->0 [23] 2/-1/-1->3->0[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO P2P Chunksize set to 524288[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/IPC[32m [repeated 127x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:32 [custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/ahmed/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Connected all rings[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Connected all trees[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO ncclCommInitRank comm 0x55fafe588760 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0xb59f2abc5470b491 - Init COMPLETE[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m NCCL version 2.21.5+cuda12.4[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:32 [utils.py:990] Found nccl from library libnccl.so.2[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:32 [pynccl.py:69] vLLM is using nccl==2.21.5[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:33 [parallel_state.py:957] rank 7 in world size 8 is assigned as DP rank 0, PP rank 1, TP rank 3[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:04:33 [model_runner.py:1110] Starting to load model ./models/qwen72b...[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m WARNING 04-14 22:04:33 [vision.py:101] Current `vllm-flash-attn` has a bug inside vision module, so we use xformers backend instead. You can run `pip install flash-attn` to use flash-attention backend.[32m [repeated 6x across cluster][0m
+INFO 04-14 22:04:47 [config.py:3334] cudagraph sizes specified by model runner [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256] is overridden by config [256, 128, 2, 1, 4, 136, 8, 144, 16, 152, 24, 160, 32, 168, 40, 176, 48, 184, 56, 192, 64, 200, 72, 208, 80, 216, 88, 120, 224, 96, 232, 104, 240, 112, 248]
+
+Loading safetensors checkpoint shards:   0% Completed | 0/38 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:   3% Completed | 1/38 [00:00<00:09,  3.70it/s]
+
+Loading safetensors checkpoint shards:   5% Completed | 2/38 [00:00<00:09,  3.62it/s]
+
+Loading safetensors checkpoint shards:   8% Completed | 3/38 [00:00<00:09,  3.63it/s]
+
+Loading safetensors checkpoint shards:  11% Completed | 4/38 [00:01<00:09,  3.59it/s]
+
+Loading safetensors checkpoint shards:  13% Completed | 5/38 [00:01<00:09,  3.55it/s]
+
+Loading safetensors checkpoint shards:  16% Completed | 6/38 [00:01<00:09,  3.52it/s]
+
+Loading safetensors checkpoint shards:  18% Completed | 7/38 [00:01<00:09,  3.43it/s]
+
+Loading safetensors checkpoint shards:  21% Completed | 8/38 [00:02<00:08,  3.41it/s]
+
+Loading safetensors checkpoint shards:  24% Completed | 9/38 [00:02<00:08,  3.43it/s]
+
+Loading safetensors checkpoint shards:  26% Completed | 10/38 [00:02<00:08,  3.41it/s]
+
+Loading safetensors checkpoint shards:  29% Completed | 11/38 [00:03<00:07,  3.44it/s]
+
+Loading safetensors checkpoint shards:  32% Completed | 12/38 [00:03<00:07,  3.44it/s]
+
+Loading safetensors checkpoint shards:  34% Completed | 13/38 [00:03<00:07,  3.42it/s]
+
+Loading safetensors checkpoint shards:  37% Completed | 14/38 [00:04<00:07,  3.35it/s]
+
+Loading safetensors checkpoint shards:  39% Completed | 15/38 [00:04<00:06,  3.39it/s]
+
+Loading safetensors checkpoint shards:  42% Completed | 16/38 [00:04<00:06,  3.34it/s]
+
+Loading safetensors checkpoint shards:  45% Completed | 17/38 [00:04<00:05,  3.51it/s]
+
+Loading safetensors checkpoint shards:  47% Completed | 18/38 [00:05<00:05,  3.54it/s]
+
+Loading safetensors checkpoint shards:  50% Completed | 19/38 [00:05<00:04,  4.34it/s]
+
+Loading safetensors checkpoint shards:  53% Completed | 20/38 [00:05<00:03,  4.54it/s]
+
+Loading safetensors checkpoint shards:  55% Completed | 21/38 [00:05<00:03,  5.39it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 38/38 [00:05<00:00,  6.76it/s]
+
+INFO 04-14 22:04:53 [loader.py:447] Loading weights took 5.63 seconds
+INFO 04-14 22:04:54 [model_runner.py:1146] Model loading took 17.4464 GiB and 20.258040 seconds
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+ INFO TUNER/Plugin: Using internal tuner plugin.
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO ncclCommInitRank comm 0x55bc7bfcde50 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0xb59f2abc5470b491 - Init COMPLETE
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Using non-device net plugin version 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Using network IB
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO DMA-BUF is available on GPU device 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO ncclCommInitRank comm 0x55bc8308d7a0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4870da8da793e2e1 - Init START
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO comm 0x55bc8308d7a0 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 00/02 :    0   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 01/02 :    0   1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/0
+MOC-R4PCC04U38:107351:112029 [0] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Connected all rings
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Connected all trees
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO ncclCommInitRank comm 0x55bc8308d7a0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4870da8da793e2e1 - Init COMPLETE
+MOC-R4PCC04U38:107351:107351 [0] NCCL INFO Comm config Blocking set to 1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Using non-device net plugin version 0
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Using network IB
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO DMA-BUF is available on GPU device 0
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO ncclCommInitRank comm 0x55bca9a08520 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4f085ef64ba32be2 - Init START
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO comm 0x55bca9a08520 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 01/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 02/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 03/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 04/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 05/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 07/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 08/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 09/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 10/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 11/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 13/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 14/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 15/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 16/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 17/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 19/24 :    0   1   3   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 20/24 :    0   2   3   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 21/24 :    0   2   1   3
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 22/24 :    0   3   1   2
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 23/24 :    0   3   2   1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 2/-1/-1->0->-1 [5] 2/-1/-1->0->-1 [6] 2/-1/-1->0->-1 [7] 2/-1/-1->0->-1 [8] 3/-1/-1->0->1 [9] 3/-1/-1->0->1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 2/-1/-1->0->-1 [17] 2/-1/-1->0->-1 [18] 2/-1/-1->0->-1 [19] 2/-1/-1->0->-1 [20] 3/-1/-1->0->1 [21] 3/-1/-1->0->1 [22] 3/-1/-1->0->1 [23] 3/-1/-1->0->1
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO P2P Chunksize set to 524288
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 14/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 15/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 20/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 21/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 16/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 17/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 22/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 23/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Connected all rings
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NC[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:04:55 [loader.py:447] Loading weights took 8.01 seconds
+[36m(RayWorkerWrapper pid=107656)[0m INFO 04-14 22:04:47 [config.py:3334] cudagraph sizes specified by model runner [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256] is overridden by config [256, 128, 2, 1, 4, 136, 8, 144, 16, 152, 24, 160, 32, 168, 40, 176, 48, 184, 56, 192, 64, 200, 72, 208, 80, 216, 88, 120, 224, 96, 232, 104, 240, 112, 248][32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:04:55 [model_runner.py:1146] Model loading took 17.4464 GiB and 22.516320 seconds
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m INFO 04-14 22:05:29 [loader.py:447] Loading weights took 42.35 seconds[32m [repeated 3x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m INFO 04-14 22:04:57 [model_runner.py:1146] Model loading took 17.4464 GiB and 23.667206 seconds[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m INFO 04-14 22:05:59 [worker.py:267] Memory profiling takes 28.98 seconds
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m INFO 04-14 22:05:59 [worker.py:267] the current vLLM instance can use total_gpu_memory (79.10GiB) x gpu_memory_utilization (0.90) = 71.19GiB
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m INFO 04-14 22:05:59 [worker.py:267] model weights take 17.45GiB; non_torch_memory takes 2.31GiB; PyTorch activation peak memory takes 19.05GiB; the rest of the memory reserved for KV Cache is 32.38GiB.
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:05:29 [loader.py:447] Loading weights took 42.88 seconds[32m [repeated 3x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:05:30 [model_runner.py:1146] Model loading took 17.4464 GiB and 56.768334 seconds[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Using non-device net plugin version 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Using network IB
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO DMA-BUF is available on GPU device 2
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO ncclCommInitRank comm 0x55b8668697c0 rank 0 nranks 2 cudaDev 2 nvmlDev 2 busId a6000 commId 0xb7fb0527bf08d43a - Init START
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO comm 0x55b8668697c0 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 00/04 :    0   1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 01/04 :    0   1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 02/04 :    0   1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 03/04 :    0   1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] -1/-1/-1->0->1 [3] -1/-1/-1->0->1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO P2P Chunksize set to 131072
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 00/0 : 1[2] -> 0[2] [receive] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 01/0 : 1[2] -> 0[2] [receive] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 02/0 : 1[2] -> 0[2] [receive] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 03/0 : 1[2] -> 0[2] [receive] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 00/0 : 0[2] -> 1[2] [send] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 01/0 : 0[2] -> 1[2] [send] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 02/0 : 0[2] -> 1[2] [send] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Channel 03/0 : 0[2] -> 1[2] [send] via NET/IB/0/GDRDMA
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:112026 [2] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Connected all rings
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Connected all trees
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO ncclCommInitRank comm 0x55b8668697c0 rank 0 nranks 2 cudaDev 2 nvmlDev 2 busId a6000 commId 0xb7fb0527bf08d43a - Init COMPLETE
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:107655 [2] NCCL INFO Comm config Blocking set to 1
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Using non-device net plugin version 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Using network IB
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO DMA-BUF is available on GPU device 2
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO ncclCommInitRank comm 0x55b88945a1c0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0x4f085ef64ba32be2 - Init START
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO NVLS multicast support is not available on dev 2
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO comm 0x55b88945a1c0 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 1/-1/-1->2->0 [5] 1/-1/-1->2->0 [6] 1/-1/-1->2->0 [7] 1/-1/-1->2->0 [8] -1/-1/-1->2->3 [9] -1/-1/-1->2->3 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 1/-1/-1->2->0 [17] 1/-1/-1->2->0 [18] 1/-1/-1->2->0 [19] 1/-1/-1->2->0 [20] -1/-1/-1->2->3 [21] -1/-1/-1->2->3 [22] -1/-1/-1->2->3 [23] -1/-1/-1->2->3
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO P2P Chunksize set to 524288
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 13/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 16/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 19/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 22/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Connected all rings
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 05/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 06/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 17/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 18/0 : 2[2] -> 0[0] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:114581 [1] NCCL INF
+[36m(RayWorkerWrapper pid=107656)[0m C
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO threadThresholds 8/8/64 
+[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:06:12 [worker.py:267] Memory profiling takes 42.13 seconds[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:06:12 [worker.py:267] the current vLLM instance can use total_gpu_memory (79.10GiB) x gpu_memory_utilization (0.90) = 71.19GiB[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:06:12 [worker.py:267] model weights take 17.45GiB; non_torch_memory takes 2.15GiB; PyTorch activation peak memory takes 19.11GiB; the rest of the memory reserved for KV Cache is 32.48GiB.[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Using non-device net plugin version 0[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Using network IB[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO DMA-BUF is available on GPU device 3[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO ncclCommInitRank comm 0x55fb27c300d0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0x4f085ef64ba32be2 - Init START[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO comm 0x55fb27c300d0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Channel 03/04 :    0   1[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->1 [5] -1/-1/-1->3->1 [6] -1/-1/-1->3->1 [7] -1/-1/-1->3->1 [8] 2/-1/-1->3->0 [9] 2/-1/-1->3->0 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->1 [17] -1/-1/-1->3->1 [18] -1/-1/-1->3->1 [19] -1/-1/-1->3->1 [20] 2/-1/-1->3->0 [21] 2/-1/-1->3->0 [22] 2/-1/-1->3->0 [23] 2/-1/-1->3->0[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO P2P Chunksize set to 524288[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Channel 03/0 : 1[3] -> 0[3] [receive] via NET/IB/0[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Channel 03/0 : 0[3] -> 1[3] [send] via NET/IB/0[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:112024 [3] NCCL INFO NCCL_IB_GID_INDEX set by environment to 3.[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Connected all rings[32m [repeated 3x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Connected all trees[32m [repeated 3x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO ncclCommInitRank comm 0x55fb0526c660 rank 0 nranks 2 cudaDev 3 nvmlDev 3 busId c6000 commId 0xe29f491e0ecf2ea9 - Init COMPLETE[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:107656 [3] NCCL INFO Comm config Blocking set to 1[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO NVLS multicast support is not available on dev 3[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/IPC[32m [repeated 56x across cluster][0m
+INFO 04-14 22:06:12 [worker.py:267] Memory profiling takes 42.07 seconds
+INFO 04-14 22:06:12 [worker.py:267] the current vLLM instance can use total_gpu_memory (79.10GiB) x gpu_memory_utilization (0.90) = 71.19GiB
+INFO 04-14 22:06:12 [worker.py:267] model weights take 17.45GiB; non_torch_memory takes 1.95GiB; PyTorch activation peak memory takes 19.11GiB; the rest of the memory reserved for KV Cache is 32.69GiB.
+INFO 04-14 22:06:13 [executor_base.py:112] # cuda blocks: 52794, # CPU blocks: 6553
+INFO 04-14 22:06:13 [executor_base.py:117] Maximum concurrency for 128000 tokens per request: 6.60x
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]
+[36m(RayWorkerWrapper pid=107656)[0m Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:06:18 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:06:13 [worker.py:267] Memory profiling takes 42.72 seconds[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:06:13 [worker.py:267] the current vLLM instance can use total_gpu_memory (79.10GiB) x gpu_memory_utilization (0.90) = 71.19GiB[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:06:13 [worker.py:267] model weights take 17.45GiB; non_torch_memory takes 2.23GiB; PyTorch activation peak memory takes 19.11GiB; the rest of the memory reserved for KV Cache is 32.40GiB.[32m [repeated 2x across cluster][0m
+INFO 04-14 22:06:19 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:24,  1.40it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:23,  1.42it/s]
+
+Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:29,  1.14it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:22,  1.43it/s]
+
+Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:27,  1.21it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:02<00:21,  1.44it/s]
+
+Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:26,  1.23it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:03<00:20,  1.44it/s]
+
+Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:24,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:20,  1.44it/s]
+
+Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:04<00:24,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  20%|██        | 7/35 [00:04<00:19,  1.44it/s]
+
+Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:23,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:05<00:18,  1.44it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:06<00:18,  1.44it/s]
+
+Capturing CUDA graph shapes:  20%|██        | 7/35 [00:05<00:22,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:06<00:17,  1.44it/s]
+
+Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:06<00:21,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:07<00:16,  1.44it/s]
+
+Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:07<00:20,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:08<00:15,  1.44it/s]
+
+Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:08<00:20,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:09<00:15,  1.44it/s]
+
+Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:08<00:19,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  40%|████      | 14/35 [00:09<00:14,  1.44it/s]
+
+Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:09<00:18,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:10<00:13,  1.44it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:11<00:13,  1.44it/s]
+
+Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:10<00:17,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:11<00:12,  1.44it/s]
+
+Capturing CUDA graph shapes:  40%|████      | 14/35 [00:11<00:16,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:12<00:11,  1.44it/s]
+
+Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:12<00:15,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:13<00:11,  1.42it/s]
+
+Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:12<00:15,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:13<00:10,  1.43it/s]
+
+Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:13<00:14,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:14<00:09,  1.43it/s]
+
+Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:14<00:13,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:15<00:09,  1.43it/s]
+
+Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:15<00:12,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:16<00:08,  1.43it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:16<00:07,  1.43it/s]
+
+Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:16<00:11,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:17<00:06,  1.44it/s]
+
+Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:16<00:11,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:18<00:06,  1.44it/s]
+
+Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:17<00:10,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:18<00:05,  1.43it/s]
+
+Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:18<00:09,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:19<00:04,  1.43it/s]
+
+Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:19<00:08,  1.26it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:20<00:04,  1.44it/s]
+
+Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:20<00:07,  1.26it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:20<00:03,  1.44it/s]
+
+Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:20<00:07,  1.26it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:21<00:02,  1.42it/s]
+
+Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:21<00:06,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:22<00:02,  1.42it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:23<00:01,  1.43it/s]
+
+Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:22<00:05,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:23<00:00,  1.43it/s]
+
+Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:23<00:04,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:24<00:00,  1.44it/s]
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:24<00:00,  1.43it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]
+
+Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:24<00:03,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:23,  1.43it/s]
+
+Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:24<00:03,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:23,  1.43it/s]
+
+Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:25<00:02,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:22,  1.43it/s]
+
+Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:26<00:01,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:02<00:21,  1.43it/s]
+
+Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:27<00:00,  1.26it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:03<00:21,  1.43it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:20,  1.43it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  20%|██        | 7/35 [00:04<00:19,  1.44it/s]
+
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.07s/it]
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.21it/s]
+
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:05<00:18,  1.44it/s]
+
+Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:27,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:06<00:18,  1.44it/s]
+
+Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:26,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:06<00:17,  1.44it/s]
+
+Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:25,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:07<00:16,  1.44it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:08<00:15,  1.44it/s]
+
+Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:24,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:09<00:15,  1.44it/s]
+
+Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:04<00:24,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  40%|████      | 14/35 [00:09<00:14,  1.44it/s]
+
+Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:23,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:10<00:13,  1.44it/s]
+
+Capturing CUDA graph shapes:  20%|██        | 7/35 [00:05<00:23,  1.21it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:11<00:13,  1.44it/s]
+
+Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:06<00:22,  1.22it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:11<00:12,  1.44it/s]
+
+Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:07<00:21,  1.23it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:12<00:11,  1.44it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:13<00:11,  1.44it/s]
+
+Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:08<00:20,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:13<00:10,  1.44it/s]
+
+Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:08<00:19,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:14<00:09,  1.44it/s]
+
+Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:09<00:18,  1.23it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:15<00:09,  1.44it/s]
+
+Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:10<00:17,  1.23it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:15<00:08,  1.44it/s]
+
+Capturing CUDA graph shapes:  40%|████      | 14/35 [00:11<00:16,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:16<00:07,  1.44it/s]
+
+Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:12<00:16,  1.24it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:17<00:06,  1.44it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:18<00:06,  1.44it/s]
+
+Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:12<00:15,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:18<00:05,  1.44it/s]
+
+Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:13<00:14,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:19<00:04,  1.44it/s]
+
+Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:14<00:13,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:20<00:04,  1.40it/s]
+
+Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:15<00:12,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:20<00:03,  1.41it/s]
+
+Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:16<00:12,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:21<00:02,  1.41it/s]
+
+Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:16<00:11,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:22<00:02,  1.42it/s]
+
+Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:17<00:10,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:23<00:01,  1.43it/s]
+
+Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:18<00:09,  1.25it/s][36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:23<00:00,  1.43it/s]
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m 
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:24<00:00,  1.44it/s]
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:24<00:00,  1.43it/s]
+
+Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:19<00:08,  1.25it/s]
+Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:20<00:07,  1.25it/s]
+Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:20<00:07,  1.25it/s]
+Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:21<00:06,  1.24it/s]
+Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:22<00:05,  1.24it/s]
+Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:23<00:04,  1.24it/s]
+Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:24<00:04,  1.24it/s]
+Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:24<00:03,  1.24it/s]
+Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:25<00:02,  1.25it/s]
+Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:26<00:01,  1.25it/s]
+Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:27<00:00,  1.25it/s]
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.25it/s]
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.24it/s]
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:07:06 [custom_all_reduce.py:195] Registering 5600 cuda graph addresses
+[36m(RayWorkerWrapper pid=107656)[0m INFO 04-14 22:06:19 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m INFO 04-14 22:07:09 [model_runner.py:1598] Graph capturing finished in 50 secs, took 0.96 GiB
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:07:16 [custom_all_reduce.py:195] Registering 5670 cuda graph addresses[32m [repeated 4x across cluster][0m
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:07:09 [model_runner.py:1598] Graph capturing finished in 51 secs, took 0.96 GiB[32m [repeated 3x across cluster][0m
+INFO 04-14 22:07:16 [custom_all_reduce.py:195] Registering 5670 cuda graph addresses
+[36m(RayWorkerWrapper pid=107656)[0m INFO 04-14 22:07:23 [custom_all_reduce.py:195] Registering 5670 cuda graph addresses[32m [repeated 2x across cluster][0m
+INFO 04-14 22:07:23 [model_runner.py:1598] Graph capturing finished in 65 secs, took 0.96 GiB
+[36m(RayWorkerWrapper pid=107654)[0m INFO 04-14 22:07:23 [model_runner.py:1598] Graph capturing finished in 64 secs, took 0.96 GiB
+INFO 04-14 22:07:24 [llm_engine.py:448] init engine (profile, create kv cache, warmup model) took 113.79 seconds
+WARNING 04-14 22:07:25 [config.py:1088] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 04-14 22:07:25 [serving_chat.py:117] Using default chat sampling params from model: {'repetition_penalty': 1.05, 'temperature': 1e-06}
+INFO 04-14 22:07:25 [serving_completion.py:61] Using default completion sampling params from model: {'repetition_penalty': 1.05, 'temperature': 1e-06}
+INFO 04-14 22:07:25 [api_server.py:1081] Starting vLLM API server on http://0.0.0.0:8000
+INFO 04-14 22:07:25 [launcher.py:26] Available routes are:
+INFO 04-14 22:07:25 [launcher.py:34] Route: /openapi.json, Methods: GET, HEAD
+INFO 04-14 22:07:25 [launcher.py:34] Route: /docs, Methods: GET, HEAD
+INFO 04-14 22:07:25 [launcher.py:34] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+INFO 04-14 22:07:25 [launcher.py:34] Route: /redoc, Methods: GET, HEAD
+INFO 04-14 22:07:25 [launcher.py:34] Route: /health, Methods: GET
+INFO 04-14 22:07:25 [launcher.py:34] Route: /load, Methods: GET
+INFO 04-14 22:07:25 [launcher.py:34] Route: /ping, Methods: GET, POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /tokenize, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /detokenize, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/models, Methods: GET
+INFO 04-14 22:07:25 [launcher.py:34] Route: /version, Methods: GET
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/chat/completions, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/completions, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/embeddings, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /pooling, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /score, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/score, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/audio/transcriptions, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /rerank, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v1/rerank, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /v2/rerank, Methods: POST
+INFO 04-14 22:07:25 [launcher.py:34] Route: /invocations, Methods: POST
+INFO:     Started server process [107351]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO 04-14 22:08:10 [logger.py:39] Received request cmpl-3b257a40938047c894523be4a03e4c10-0: prompt: 'San Francisco is a', params: SamplingParams(n=1, presence_penalty=0.0, frequency_penalty=0.0, repetition_penalty=1.05, temperature=0.0, top_p=1.0, top_k=-1, min_p=0.0, seed=None, stop=[], stop_token_ids=[], bad_words=[], include_stop_str_in_output=False, ignore_eos=False, max_tokens=1000, min_tokens=0, logprobs=None, prompt_logprobs=None, skip_special_tokens=True, spaces_between_special_tokens=True, truncate_prompt_tokens=None, guided_decoding=None, extra_args=None), prompt_token_ids: [23729, 12879, 374, 264], lora_request: None, prompt_adapter_request: None.
+INFO 04-14 22:08:10 [async_llm_engine.py:211] Added request cmpl-3b257a40938047c894523be4a03e4c10-0.
+[36m(RayWorkerWrapper pid=27449, ip=169.254.229.118)[0m [rank6]:[W414 22:08:11.705881398 ProcessGroupNCCL.cpp:3436] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (function operator())
+[36m(RayWorkerWrapper pid=107655)[0m /var/home/ahmed/roce-testing/RHELAI/5_vllm/vllm/lib64/python3.11/site-packages/vllm/distributed/parallel_state.py:411: UserWarning: The given buffer is not writable, and PyTorch does not support non-writable tensors. This means you can write to the underlying (supposedly non-writable) buffer using the tensor. You may want to copy the buffer to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:1561.)
+[36m(RayWorkerWrapper pid=107655)[0m   object_tensor = torch.frombuffer(pickle.dumps(obj), dtype=torch.uint8)
+/var/home/ahmed/roce-testing/RHELAI/5_vllm/vllm/lib64/python3.11/site-packages/vllm/distributed/parallel_state.py:411: UserWarning: The given buffer is not writable, and PyTorch does not support non-writable tensors. This means you can write to the underlying (supposedly non-writable) buffer using the tensor. You may want to copy the buffer to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:1561.)
+  object_tensor = torch.frombuffer(pickle.dumps(obj), dtype=torch.uint8)
+CL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 04/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 05/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 06/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 07/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 16/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 17/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 18/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 19/0 : 0[0] -> 2[2] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 08/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 09/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 20/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Channel 21/0 : 0[0] -> 3[3] via P2P/IPC
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO Connected all trees
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+MOC-R4PCC04U38:107351:114580 [0] NCCL INFO ncclCommInitRank comm 0x55bca9a08520 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 6000 commId 0x4f085ef64ba32be2 - Init COMPLETE
+[rank0]:[W414 22:08:11.889100113 ProcessGroupNCCL.cpp:3436] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (function operator())
+[36m(RayWorkerWrapper pid=107655)[0m 
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/IPC
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO Connected all trees
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer
+[36m(RayWorkerWrapper pid=107655)[0m MOC-R4PCC04U38:107655:114582 [2] NCCL INFO ncclCommInitRank comm 0x55b88945a1c0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId a6000 commId 0x4f085ef64ba32be2 - Init COMPLETE
+[36m(RayWorkerWrapper pid=107655)[0m INFO 04-14 22:07:24 [model_runner.py:1598] Graph capturing finished in 64 secs, took 0.96 GiB[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m O Channel 01/0 : 1[1] -> 3[3] via P2P/IPC
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:114581 [1] NCCL INFO Connected all rings
+[36m(RayWorkerWrapper pid=107656)[0m | 32/8/64 | 512 | 512
+INFO 04-14 22:08:15 [metrics.py:488] Avg prompt throughput: 0.8 tokens/s, Avg generation throughput: 27.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:20 [metrics.py:488] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 35.8 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:25 [metrics.py:488] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 35.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.1%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:30 [metrics.py:488] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 35.1 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.1%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:35 [metrics.py:488] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 35.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.1%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:39 [async_llm_engine.py:179] Finished request cmpl-3b257a40938047c894523be4a03e4c10-0.
+INFO:     169.254.229.118:37902 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO 04-14 22:08:45 [metrics.py:488] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 15.3 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 04-14 22:08:47 [launcher.py:74] Shutting down FastAPI HTTP server.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO 04-14 22:08:47 [async_llm_engine.py:65] Engine is gracefully shutting down.
+MOC-R4PCC04U38:107351:114675 [0] NCCL INFO Comm config Blocking set to 1
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Using non-device net plugin version 0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Using network IB
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO DMA-BUF is available on GPU device 0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO ncclCommInitRank comm 0x7f2cf418c230 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 6000 commId 0xcdbaa5f056d7e06f - Init START
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff,ffffffff,ffffffff,00000000,00000000,00000000,00000000,ffffffff,ffffffff,ffffffff,ffffffff
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO comm 0x7f2cf418c230 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 00/02 :    0   1
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 01/02 :    0   1
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO P2P Chunksize set to 131072
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/0
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Connected all rings
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO Connected all trees
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MOC-R4PCC04U38:107351:114686 [0] NCCL INFO ncclCommInitRank comm 0x7f2cf418c230 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 6000 commId 0xcdbaa5f056d7e06f - Init COMPLETE
+MOC-R4PCC04U38:107351:114702 [0] NCCL INFO Channel 00/1 : 0[0] -> 1[0] [send] via NET/IB/0/Shared
+MOC-R4PCC04U38:107351:114702 [0] NCCL INFO Channel 01/1 : 0[0] -> 1[0] [send] via NET/IB/0/Shared
+[36m(RayWorkerWrapper pid=27447, ip=169.254.229.118)[0m [rank4]:[W414 22:08:11.830185743 ProcessGroupNCCL.cpp:3436] Warning: TORCH_NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (function operator())[32m [repeated 6x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m /var/home/ahmed/roce-testing/RHELAI/5_vllm/vllm/lib64/python3.11/site-packages/vllm/distributed/parallel_state.py:411: UserWarning: The given buffer is not writable, and PyTorch does not support non-writable tensors. This means you can write to the underlying (supposedly non-writable) buffer using the tensor. You may want to copy the buffer to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:1561.)[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m   object_tensor = torch.frombuffer(pickle.dumps(obj), dtype=torch.uint8)[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:114581 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/IPC[32m [repeated 41x across cluster][0m
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:114581 [1] NCCL INFO Connected all trees
+[36m(RayWorkerWrapper pid=107654)[0m MOC-R4PCC04U38:107654:114581 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 16 p2p channels per peer[32m [repeated 2x across cluster][0m
+[36m(RayWorkerWrapper pid=107656)[0m MOC-R4PCC04U38:107656:114583 [3] NCCL INFO ncclCommInitRank comm 0x55fb27c300d0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c6000 commId 0x4f085ef64ba32be2 - Init COMPLETE[32m [repeated 2x across cluster][0m
+[rank0]:[W414 22:08:48.881703180 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+/usr/lib/containers/storage/overlay/f5fd809a8f035e4ba4bd4e7c1d71c2a62a30dd45acdb9de5e2b6028b3841a23b/diff/usr/lib64/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+
+
+### Detected Errors ###
+5. Errors
+[36m(RayWorkerWrapper pid=27450, ip=169.254.229.118)[0m INFO 04-14 22:06:18 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 04-14 22:06:19 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[36m(RayWorkerWrapper pid=107656)[0m INFO 04-14 22:06:19 [model_runner.py:1456] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.[32m [repeated 6x across cluster][0m
+
+
+### Nsys ###
+
+
+### Completion Commands ###
+$ curl http://$MASTER_ADDR:8000/v1/completions   -H "Content-Type: application/json"   -d '{
+    "model": "./models/qwen72b",
+    "prompt": "San Francisco is a",
+    "max_tokens": 1000,
+    "temperature": 0
+  }'
+{"id":"cmpl-3b257a40938047c894523be4a03e4c10","object":"text_completion","created":1744668490,"model":"./models/qwen72b","choices":[{"index":0,"text":" city in, and the county of, San Francisco in the U.S. state of California. Founded on June 29, 1776, it is the cultural, commercial, and financial center of Northern California. San Francisco is the 13th-most populous city in the United States, and the fourth-most populous in California, with 883,305 residents as of 2019. It covers an area of about 46.89 square miles (121.4 km2), mostly at the north end of the San Francisco Peninsula in the San Francisco Bay Area, making it the second-most densely populated large U.S. city, and the fifth-most densely populated U.S. county, behind only four of the five New York City boroughs. It is the 16th-most populous U.S. city. It is also part of the fifth-most populous primary statistical area in the United States, the San Jose–San Francisco–Oakland, CA Combined Statistical Area, which has 8.7 million residents. With a density of 18,280 people per square mile (7,060 people per km2), it is the most densely settled large U.S. city, and the only consolidated city-county. It is home to the headquarters of five major banking institutions and several international banks. San Francisco is also the 12th-highest ranked among the 25 largest U.S. cities. San Francisco is the 15th-most populous U.S. city. As of 2019, the San Jose-San Francisco-Oakland metro area had a population of 8.7 million. San Francisco is the 12th-largest U.S. city. The city and its surrounding areas are known as the San Francisco Bay Area, and are a part of the larger San Jose-San Francisco-Oakland combined statistical area, with 8.7 million people in the nine-county San Francisco Bay Area, of which it is a part. With San Jose, it forms the fifth most populous U.S. metropolitan statistical area, with 4.9 million people. San Francisco is also the financial and cultural center of the larger San Jose-San Francisco-Oakland combined statistical area, with 8.7 million people. San Francisco was founded on June 29, 1776, when colonists from Spain established Presidio of San Francisco, a fort, and Mission San Francisco de Asís, a mission. San Francisco is the largest city in both the San Francisco Bay Area and Northern California, the second-most populous U.S. urban agglomeration, with 4.9 million people. San Francisco was founded on June 29, 1776, when the Presidio of San Francisco, a Spanish military garrison, and Mission San Francisco de Asís, a Spanish mission, were established. In 1848, during the California Gold Rush, it became a rapidly growing port city. After three-quarters of the city was destroyed by the 1906 earthquake and fire, it was quickly rebuilt, hosting the Panama-Pacific International Exposition in 1915. It is the principal city of the 18th-most populous U.S. metropolitan area, with 4.9 million people. It is the smallest county in California, with a land area of about 46.89 square miles (121.4 km2). It is the only consolidated city-county in California. It is a popular tourist destination, known for its cool summers, fog, steep rolling hills, diverse mix of architecture, and landmarks, including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, Fisherman's Wharf, and its Chinatown, which is the largest Chinese community outside Asia. It is known for its cool summers, fog, steep rolling hills, diverse mix of architecture, and landmarks, including the Golden Gate Bridge, cable cars, the Golden Gate Park, Alcatraz Island, Fisherman's Wharf, and its Chinatown, the oldest Chinatown in North America. It is also the only consolidated city-county in California. It is a popular tourist destination, ranking 16th in the world, and over 20 million tourists arrived in 2019. San Francisco is also the birthplace of the United Nations. It is the birthplace of the United Nations. It is the birthplace of the United Nations. It is known for its cool summers, fog, steep rolling hills, and eclectic mix of architecture. The earliest archaeological evidence of human habitation in the area dates to 3000 BC. The Yelamu people have lived in the territory along the Bay Area since at least the 1848 California Gold Rush","logprobs":null,"finish_reason":"length","stop_reason":null,"prompt_logprobs":null}],"usage":{"prompt_tokens":4,"total_tokens":1004,"completion_tokens":1000,"prompt_tokens_details":null}}
